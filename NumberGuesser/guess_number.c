@@ -8,13 +8,16 @@ int main() {
 	// declaring values
 	int userInput, randomNumber;
 	int guesses = 0;
-
+	
+	// asking for user input
 	printf("Enter a number: ");
 	scanf("%d", &userInput);
-
+	
+	// generating random number
 	srand(time(NULL)); 
 	randomNumber = rand() % (userInput + 1);
-
+	
+	// game loop
 	do {
 		printf("Make a guess: ");
 		scanf("%d", &userInput);
